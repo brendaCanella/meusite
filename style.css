@@ -1,144 +1,231 @@
- #mulher {
-   width: 550px;
-
- }
-
- #alter {
-   width: 25px;
-   height: 25px;
-   position: fixed;
-   bottom: 0;
-   right: 0;
- }
-
- #whats {
-   width: 15px;
-   height: 15px;
- }
-
- #logo {
-   width: 120px;
-   height: 120px;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
- .page {
-   width: 1000px;
-   margin: 0 auto;
-   padding-top: 65px;
- }
+#mulher {
+  width: 550px;
 
 
- body {
-   margin: 20px;
-   font-family: 'Open Sans', sans-serif;
-   display: flex;
-   justify-content: center;
+}
 
-   background: linear-gradient(180deg, rgba(227, 255, 248, 0)82.08%, rgba(227, 255, 248, 0.38)100%);
-   min-height: 100vh;
- }
+#alter {
+  width: 25px;
+  height: 25px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
 
- main {
-   display: flex;
-   align-items: center;
- }
+#whats {
+  width: 15px;
+  height: 15px;
+}
 
-
- a {
-   color: black;
-   text-decoration: none;
- }
-
- nav {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-bottom: 30px;
-   font-family: "Mulish", sans-serif;
- }
+#logo {
+  width: 120px;
+  height: 120px;
+}
 
 
- ul {
-   list-style: none;
-   display: flex;
-   gap: 48px;
-   margin: 0;
-   padding: 0;
- }
+.page {
+  width: 60vw;
+  margin: 0 auto;
+  padding-top: 65px;
 
- ul li a:hover {
-
-   color: gray;
- }
+}
 
 
- ul li a {
+:root {
+  font-size: 62.5%;
+}
+
+
+body {
+  margin: 2.0rem;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  justify-content: center;
+
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0)82.08%, rgba(227, 255, 248, 0.38)100%);
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.0rem;
+  font-family: "Mulish", sans-serif;
+}
+
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 4.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+ul li a:hover {
+
+  color: gray;
+}
+
+
+ul li a {
   transition: 300ms;
-   opacity: 0.5;
-   color: black;
+  opacity: 0.5;
+  color: black;
 
- }
-
-
- h1,
- ul {
-   font-family: "Mulish", sans-serif;
- }
+}
 
 
- h1 {
-   font-size: 49px;
-   line-height: 56px;
-   color: #1F1534;
-   font-weight: normal;
-   width: 490px;
- }
-
- h1 span {
-   color: #89C5CC;
-   font-weight: bold;
- }
-
- section p {
-   font-size: 14px;
-   line-height: 28px;
-   color: #7D7987;
-   margin: 40px 0;
-
- }
-
- button {
-   text-transform: uppercase;
-   font-family: 'Open Sans', sans-serif;
-   color: white;
-   background: #69B99D;
-   border: none;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   padding: 14px 32px 15px;
-   gap: 10px;
-   transition: 300ms;
-   border-radius: 4px;
-
-   cursor: pointer;
-
- }
-
- button:hover {
-   background: #4ea788;
- }
+h1,
+ul {
+  font-family: "Mulish", sans-serif;
+}
 
 
- footer {
-   font-size: 14px;
-   line-height: 28px;
-   text-align: center;
-   margin-top: 80px;
- }
+h1 {
+  font-size: 4.9rem;
+  line-height: 5.6rem;
+  color: #1F1534;
+  font-weight: normal;
+  width: 100%;
 
- fotter a {
 
-   font-weight: bold;
- }
+}
+
+h1 span {
+  color: #89C5CC;
+  font-weight: bold;
+}
+
+main section {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+}
+
+section p {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  color: #7D7987;
+  margin: 4.0rem 0;
+
+}
+
+button {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background: #69B99D;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.4rem 3.2rem 1.5rem;
+  gap: 10px;
+  transition: 300ms;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  width: 100%;
+
+}
+
+button:hover {
+  background: #4ea788;
+}
+
+
+footer {
+  font-size: 1.4rem;
+  line-height: 2.8rem;
+  text-align: center;
+  margin-top: 8.0rem;
+}
+
+fotter a {
+
+  font-weight: bold;
+}
+
+@media(max-width:600px) {
+
+
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page {
+    width: 100vw;
+  }
+
+  nav {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2.0rem;
+
+  }
+
+  button {
+    width: 60%;
+  }
+
+}
+
+@media(max-width: 1776px) {
+  main {
+    flex-direction: column-reverse;
+    width: 100vw;
+  }
+
+  #mulher {
+    width: 60%;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .page {
+    width: 80vw;
+  }
+
+  button {
+
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+  }
+}
